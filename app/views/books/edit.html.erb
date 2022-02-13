@@ -2,7 +2,7 @@
 
 <!-- エラーメッセージ -->
 <%= render 'error', book: @book %>
-<%= form_for @book do |f| %>
+<%= form_with model: @book do |f| %>
   <div>
     <%= f.label :Title %><br>
     <%= f.text_field :title %>
